@@ -26,5 +26,3 @@ def test_to_clear():
     ll.clear()
     
     assert ll.get_to_list() == []
-    
-    
