@@ -27,7 +27,7 @@ class LinkedList:
             return
         
         last_node = self.head
-        while last_node.next is not None:
+        while last_node.next:
             last_node = last_node.next
         
         last_node.next = new_node
@@ -97,6 +97,14 @@ class LinkedList:
         :return None
         """
         self.head = None
+    def get_to_list(self) -> None:
+        if self.is_empty():
+            return []
         
-
+        nodes = list()
+        current_node = self.head
+        while current_node:
+            nodes.append(current_node.data)
+            current_node = current_node.next 
         
+        return nodes        
