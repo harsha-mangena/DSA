@@ -97,7 +97,15 @@ class LinkedList:
         :return None
         """
         self.head = None
+        
     def get_to_list(self) -> None:
+        """
+        Returns a list of all the elements in the LinkedList.
+        Does not modify the LinkedList.
+
+        :return: A list of all the elements in the LinkedList.
+        :rtype: list
+        """
         if self.is_empty():
             return []
         
