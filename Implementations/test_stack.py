@@ -1,7 +1,7 @@
 import pytest
 from stack import Stack
 
-def test_for_operations():
+def test_operations():
     stack = Stack()
     stack.push(10)
     stack.push(20)

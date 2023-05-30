@@ -61,6 +61,9 @@ class Stack:
     def is_empty(self) -> bool:
         return self.length == -1
     
+    def is_full(self) -> bool:
+        return self.length = self.MAX_SIZE-1
+    
     def clear(self) -> None:
         """
         Clears the stack by resetting the stack and stack length to their initial values. 

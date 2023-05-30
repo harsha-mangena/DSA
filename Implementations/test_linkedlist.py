@@ -1,6 +1,6 @@
 import pytest
 from linkedlist import LinkedList
-def test_for_operations():
+def test_operations():
     ll = LinkedList()
     ll.insert_at_beginning(10)
     ll.insert(15)
