@@ -10,10 +10,9 @@ class Stack:
         Returns:
             None
         """
-        self.stack = []
         self.MAX_SIZE = 10
         self.length = -1
-        self.initialize_stack()
+        self.stack = [None] * self.MAX_SIZE
         
     def push(self, value) -> None:
         """
@@ -43,7 +42,7 @@ class Stack:
         if self.length == -1:
             return "Error: Stack Underflow"
 
-        self.stack[self.length] = -1
+        self.stack[self.length] = None
         self.length -= 1
     
     def peek(self) -> int:
@@ -62,24 +61,14 @@ class Stack:
         return self.length == -1
     
     def is_full(self) -> bool:
-        return self.length = self.MAX_SIZE-1
+        return self.length == self.MAX_SIZE-1
     
     def clear(self) -> None:
         """
         Clears the stack by resetting the stack and stack length to their initial values. 
         This function takes no parameters and returns nothing.
         """
-        self.stack = []
-        self.length = -1
-        self.initialize_stack()
+        self.stack = [None] * self.MAX_SIZE
+        self.length = 0
         
-    def initialize_stack(self) -> None:
-        """
-        Initializes the stack by appending -1 to the stack list for the range of self.MAX_SIZE.
-
-        :param self: The instance of the class.
-        :return: None
-        """
-        for i in range(self.MAX_SIZE):
-            self.stack.append(-10**9)
     
