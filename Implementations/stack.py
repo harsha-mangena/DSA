@@ -69,6 +69,6 @@ class Stack:
         This function takes no parameters and returns nothing.
         """
         self.stack = [None] * self.MAX_SIZE
-        self.length = 0
+        self.length = -1
         
     
