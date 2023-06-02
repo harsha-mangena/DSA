@@ -1,5 +1,5 @@
 class HashTable:
-    def __init__(self, size):
+    def __init__(self, size=10):
         """
         Initializes a new instance of the class with the given size.
 
@@ -10,7 +10,7 @@ class HashTable:
         :rtype: None
         """
         self.size = size
-        self.table = [None] * size
+        self.table = [[] for i in range(size)]
 
     def hash_function(self, key):
         """
