@@ -72,7 +72,7 @@ class HashTable:
 
 
 # Example usage:
-hash_table = HashTable(10)
+hash_table = HashTable()
 
 hash_table.insert("apple", 5)
 hash_table.insert("banana", 10)
