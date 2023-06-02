@@ -1,4 +1,13 @@
 def binary_search(arr : list[int], target) -> int:
+    """
+    Performs binary search on a sorted list of integers to find the index of a target integer.
+    
+    :param arr: A sorted list of integers to search through.
+    :type arr: list[int]
+    :param target: The integer to search for.
+    :return: The index of the target integer in the list if it exists, otherwise -1.
+    :rtype: int
+    """
     if arr is None:
         return -1
     
