@@ -11,7 +11,7 @@ class Solution:
         stack = []
         for i in arr:
             if len(stack) == 3:
-                break
+                return True
             elif stack is None or i%2!=0:
                 stack.append(i)
             else:
