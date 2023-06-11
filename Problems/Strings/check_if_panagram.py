@@ -9,6 +9,8 @@ class Solution:
         :return: True if sentence is a pangram, False otherwise.
         :rtype: bool
         """
+        if sentence is None:
+            return False
         arr = [0 for i in range(26)]
         for i in sentence:
             index = ord(i)-97
